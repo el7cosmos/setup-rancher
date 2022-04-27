@@ -1,0 +1,13 @@
+name: 'Setup Rancher'
+description: 'Setup Rancher CLI'
+author: 'el7cosmos'
+inputs:
+  version:
+    required: false
+    description: 'Rancher CLI version'
+  token:
+    required: false
+    description: 'Github token to fecth latest release if version omitted'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
