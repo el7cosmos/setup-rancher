@@ -1,0 +1,22 @@
+name: 'Setup Rancher'
+description: 'Setup Rancher CLI'
+author: 'el7cosmos'
+inputs:
+  version:
+    required: false
+    description: 'Rancher CLI version'
+  github-token:
+    required: false
+    description: 'Github token to fecth latest release if version omitted'
+  url:
+    required: false
+    description: 'Rancher server URL'
+  rancher-token:
+    required: false
+    description: 'Token from the Rancher UI'
+  context:
+    required: false
+    description: 'Set the context during login'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
